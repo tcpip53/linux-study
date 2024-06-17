@@ -2,7 +2,31 @@ Linux Boot Process
 
 Basic 
 
-BIOS/UEFI
+**Boot Process Steps** 
+((https://wiki.archlinux.org/title/Arch_boot_process)
+    -> BIOS Mode
+      - POST
+      - HW init
+      - loads MBR
+      - load boot loader -> GRUB 
+    -> UEFI Mode
+      - POST 
+      - HW init 
+      - checks NVRAM for boot loction
+      - launches boot loader or other tool
+        -> Boot Loader 
+          - loads kernel 
+          - checks/edits kerenl paramrters 
+            -> Kernel 
+              - loads vmlinux image -> kernel 
+                -> initramfs
+                   - speical filesystem that is used to load a rootfs temporarily 
+                    -> userspace 
+                       - init is executed (systenmd)  
+                       - getty 
+                       - login 
+                       - shell 
+**BIO/UEFI**
 
 Configuration thru UI startup 
 
@@ -10,7 +34,7 @@ Initiates POST
 
  
 
-UEFI
+**UEFI**
 
 quick notes 
 
