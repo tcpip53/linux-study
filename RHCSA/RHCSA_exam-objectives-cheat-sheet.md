@@ -47,17 +47,15 @@ nanop
 touch  
 
 ## Create, delete, copy, and move files and directories
-files 
-
-
-directory
-mkdir
-rmdir
-cp
-mv
-Create hard and soft links
-List, set, and change standard ugo/rwx permissions
-Locate, read, and use system documentation including man, info, and files in /usr/share/doc
+- files 
+- directory
+- mkdir
+- rmdir
+ cp
+- mv
+- Create hard and soft links
+- List, set, and change standard ugo/rwx permissions
+- Locate, read, and use system documentation including man, info, and files in /usr/share/doc
 
 ## Create simple shell scripts
 Conditionally execute code (use of: if, test, [], etc.)
