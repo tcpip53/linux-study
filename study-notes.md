@@ -1,26 +1,41 @@
 # 20250301
 - man 7 file-hierarchy
 
+-
 |directory   |use                                |
 |------------|-----------------------------------|
-|/ 	     | stasrt of file system 	         |
-|/boot       |files needed to boot kernel  	 |
-|/dev        |                                   |  
-|/etc        |                                   |
-|/home       |                                   |
-|/media,/mt  |                                   |
-|/opt        |                                   |
-|/proc       |                                   |
-|/root       |                                   |
-|/run        |                                   | 
-|/src        |                                   |
-|/sys        |                                   |
-|/tmp        |                                   |
-|/usr        |                                   | 
-|/var        |                                   
+|/ 	         |start of file system 	         |
+|/boot       |files needed to boot kernel  	     |
+|/dev        |files used to access physical devices|  
+|/etc        |configuration files |
+|/home       |local home directories for users. this can be mounted on dedicated device to imporve security  |
+|/media,/mnt  |directory to mount file systems|
+|/opt        |                                    |
+|/proc       |gives access to kernel information, used by proc file systems|
+|/root       |home dir of root user           |
+|/run        |information for users and process since last boot     | 
+|/srv        | can be used for services                                   |
+|/sys        |used as interface for HW managed by kernel and their process |
+|/tmp        |intended for small files, can be configure to be that contents are deleted after poweroff|
+|/usr        |read only directory used of OS files, this can be placed on separate device                                    | 
+|/boot/EFI   |used by EFI and needs separate device|
+|/var        | this dir is defined as "Persistent Variable System Data" and need to have write access during normal operation|
+
+- `noexec` and `nodev` were mentioned many times in this chapter so it might be worthwhile to remember these 
+  - noexec: do not permit the execution of binaries on this files system          
+  - nodev: do not interpret character or block special devices on this file system
+- use the following commands within neovim to update/install plugins [#terminal-setup]()
+- spellcheck vim `s]` find next misspelled word; `z=` suggestion list [#vim]()
+- added markdown [plugins](https://github.com/iamcco/markdown-preview.nvim) for neovim 
+
+:PlugInstall
+:PlugUpdate
+
+-in man pages "[]" declares a footnote "()" declares a reference to a different section in the man pages 
 
 
 #  20240118
+
 dmesg --color=always | less -R
 Error message on boot: "piix4_smbus 0000:00:01.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr"
 
@@ -120,4 +135,4 @@ https://forums.virtualbox.org/viewtopic.php?f=3&t=106666
 
 
 VM was installed as workstation on many “packages” ie 
-TODO (add all packages )
+]s]s]ODO (add all packages )
