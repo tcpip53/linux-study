@@ -1,8 +1,8 @@
 
-**  # RHCSA - exam objectives cheat sheet **
+# RHCSA - exam objectives cheat sheet 
 
 
-** ## Understand and use essential tools ## **
+## Understand and use essential tools ## 
 Access a shell prompt and issue commands with correct syntax
 open terminal 
 
