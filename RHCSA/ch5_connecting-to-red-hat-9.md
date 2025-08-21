@@ -106,3 +106,4 @@ file properties will be synchronized
 ## Using passphrases or not
 - passphrases can be used for maximum security 
 - do the exercise a few more times and set ip up of all users and all hosts in lab  
+

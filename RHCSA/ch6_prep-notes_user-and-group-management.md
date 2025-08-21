@@ -71,3 +71,4 @@ a. Set the default shell to /usr/sbin/nologin.   []
 b. Set the default shell to /bin/false.          []
 c. Create a file with the name /etc/nologin.     [x]
 d. Create a file with the name /etc/nologin.txt. []
+
